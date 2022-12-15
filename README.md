@@ -10,8 +10,13 @@
 ## 1. 제작 기간 & 참여 인원
 - 22.10.24 ~ 22.11.24 (4주)
 - 팀프로젝트(8명)
-<img src="https://user-images.githubusercontent.com/106065178/207888739-03680068-5ce0-4c65-94ad-1c12f728883b.png" width="300" height="200">
-<img src="https://user-images.githubusercontent.com/106065178/207888770-120dc403-70b1-41d0-9060-54a495ce42e5.png" width="300" height="200" style="float:left;">
+- <details>
+<summary><b>팀플 이미지</b></summary>
+<div markdown="1">
+	<img src="https://user-images.githubusercontent.com/106065178/207888739-03680068-5ce0-4c65-94ad-1c12f728883b.png" width="400" height="300">
+	<img src="https://user-images.githubusercontent.com/106065178/207888770-120dc403-70b1-41d0-9060-54a495ce42e5.png" width="400" height="300">
+</div>
+</details>
 
 </br>
 
