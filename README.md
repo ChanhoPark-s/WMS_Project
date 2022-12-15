@@ -10,6 +10,8 @@
 ## 1. 제작 기간 & 참여 인원
 - 22.10.24 ~ 22.11.24 (4주)
 - 팀프로젝트(8명)
+![image](https://user-images.githubusercontent.com/106065178/207888739-03680068-5ce0-4c65-94ad-1c12f728883b.png)
+![image](https://user-images.githubusercontent.com/106065178/207888770-120dc403-70b1-41d0-9060-54a495ce42e5.png)
 
 </br>
 
@@ -61,61 +63,7 @@
 - 이로 인해 **관리자는 지속적인 배포의 번거로움을 없애고 사용자는 끊김없는 서버를 사용**할 수 있게 됩니다.
 <br>
   
-### 4.2. 비밀번호 암호화
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207795103-2fa3b5da-4615-4288-a59b-51cea4fc987e.png" width="400" height="50">
-  </p>
-  <br>
 
-- Spring Security를 활용하여 BCryptPasswordEncoder 라는 암호화를 사용하여 비밀번호를 암호화 저장하였습니다.
-<br>
-  
-### 4.3. 휴대폰 & 이메일 인증
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207797115-25ba4819-8617-477e-a81c-8a6c186fe43d.png" width="700" height="300">
-  </p>
-  <br>
-  
-- Twilio API 와 Naver Mail API를 활용하여 인증 체계를 구성하였습니다.
-
-  <br>
-  
-### 4.4. 사용자 편의 지도 검색
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207798202-ab4f3936-397a-46c9-94f9-42c44a7e823d.png" width="500" height="400">
-  </p>
-  <br>
-
-- 카카오맵 API를 통한 사용자 편의 검색 기능 제공을 하였습니다.
-  
-<br>
-  
-### 4.5. 채팅 기능
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207815703-37ceb3e3-afe4-4f77-add7-617eb4c2071b.png" width="650" height="300">
-  </p>
-  <br>
-
-- Json 과 Ajax를 통한 채팅을 제공하여 판매자와 구매자 사이의 편의성과 신뢰성을 주었습니다.
-<br> 
-  
- ### 4.6. 카카오 결제 API
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207840399-a151a287-1cae-4b61-8aa2-075c4bb682b1.png" width="650" height="300">
-  </p>
-  <br>
-
-- 카카오 결제 API 를 통한 사용자 편의 시스템을 사용하였습니다.
-  
-<br>
-  
-   ### 4.7. 카카오 결제 API
-  <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207845517-2305d2d9-e18e-4edd-927d-c2ffc45bc106.png" width="300" height="300">
-  </p>
-  <br>
-
-- 카카오톡 API 를 활용해 상담사와 빠른 상담을 할 수 있는 사용자 편의 시스템을 사용하였습니다.
 
 </div>
 </details>
