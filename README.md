@@ -160,6 +160,29 @@ END;
 
 ### 4.6.  Redirect 객체 넘기기[RedirectAttributes]
 
+	
+<details>
+<summary><b>기존 코드</b></summary>
+<div markdown="1">
+	
+~~~java
+	@RequestMapping(value = command , method = RequestMethod.POST)
+	public String updateMember(MemberBean mb,Model model) {
+		
+		return "redirect:mypage.mb?select=6";
+	}
+	
+~~~
+	
+</div>
+</details>
+
+- 이전 프로젝트에서는 변수를 하나하나 받아와서 redirect 주소 뒤에 변수를 붙혀 넘기는 방식을 사용했었습니다.
+	
+<details>
+<summary><b>개선된 코드</b></summary>
+<div markdown="1">
+
 ~~~java
 	@PostMapping("/update")
 	public String update(ClientVO VO,SearchVO searchvo,RedirectAttributes rttr) {
@@ -171,7 +194,12 @@ END;
 	}
 	
 ~~~
-- 이전 프로젝트에서는 변수를 하나하나 받아와서 redirect 주소 뒤에 변수를 붙혀 넘기는 방식을 사용했었습니다.
+
+</div>
+</details>
+
+</br>		
+
 - 이번 프로젝트에서는 개선하여 **RedirectAttributes클래스**를 사용하여 사용할 변수들을 모든 **객체를 바로 넘길 수 있도록** 하여 **Clean한 코드**를 작성하였습니다. 
 <br>
   
