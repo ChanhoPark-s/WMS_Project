@@ -67,6 +67,19 @@
 - 이것을 해결하기 위해 **AWS EC2에 Jenkins**를 설치하여 사용자는 서버1을 사용하고 있다가 관리자가 Github에 Push할 때마다 **Github_Webhook**로 신호를 보내주고 그 신호를 받은 Jenkins가 서버2에 자동적으로 배포를 하고 배포가 완료됨과 동시 사용자는 서버2를 사용하게 되는 것입니다.
 - 이로 인해 **관리자는 지속적인 배포의 번거로움을 없애고 사용자는 끊김없는 서버를 사용**할 수 있게 됩니다.
 <br>
+	
+### 4.2. Websoket 실시간 채팅
+  <p align="center">
+  <img src="https://user-images.githubusercontent.com/106065178/207891192-33383516-f9a5-4cab-a2eb-0eb8b8bc2d47.png">
+  </p>
+  <br>
+
+- 이전 프로젝트에서는 Spring의 버전이 낮아 WebSoket을 사용하기 적절하지 않아 Ajax를 통한 reload 새로고침을 사용하여 구현하였습니다.
+
+- 이번 프로젝트에서는 구현을 시작하기 앞서 Spring의 버전을 높히고 **Websoket을 활용**하였습니다.
+
+- **Websoket을 활용**하여 새로고침없는 (끊김없는) 실시간 채팅을 구현하였습니다.
+<br>
   
 
 
