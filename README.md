@@ -35,7 +35,7 @@
 
 ## 3.1 시퀀스 다이어그램
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/106065178/207792583-247a58e8-c9ce-48a5-9e4d-9c4d579299b9.png" width="400" height="400">
+  <img src="https://user-images.githubusercontent.com/106065178/207877593-da4c6804-65c1-489b-ba0e-fc4d6f4894d5.png" width="400" height="600">
   </p>
   <br>
 
