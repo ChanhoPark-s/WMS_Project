@@ -31,7 +31,7 @@
 </br>
 
 ## 3. ERD 설계
-![WMS_ERD 최종](https://user-images.githubusercontent.com/106065178/207876831-b27d7cf2-2e53-472e-ab63-4d76b2c9a922.png)
+![WMS_ERD 최종](https://user-images.githubusercontent.com/106065178/207878543-8710d855-3ee9-4ab2-8f19-0ec27a03972a.png)
 
 ## 3.1 시퀀스 다이어그램
 <p align="center">
