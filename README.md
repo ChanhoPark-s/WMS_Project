@@ -317,46 +317,6 @@ public class PageForWareHouseDTO<T> {
 - 이번 프로젝트에서는 번거러운 작업을 방지하기위해 AWS EC2의 Lang을 oracle sql에 맞는 ko_KR 로 바꿔주었습니다.<br>
   <a href="https://chanho-park.tistory.com/entry/SQL-%EB%B0%B0%ED%8F%AC-%EC%8B%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EC%97%90%EB%9F%ACliteral-does-not-match-format-string">참고 사이트</a>
 
-<details>
-<summary><b>기존 코드</b></summary>
-<div markdown="1">
-	
-~~~java
- <select id="GetAllReservationOnlyDates" resultType="reservation.model.ReservationBean">
-		select start_date,end_date
-		from reservation 
-		where product_no = #{pno}
- </select>
-  
-  <br>
-  <insert id="InsertReservation">
-	insert into reservation values(reservation_seq.nextval,#{product_no},#{buyer_no},#{start_date},#{end_date},0,sysdate,'1',#{amount},null)
-  </insert>
-~~~
-	
-</div>
-</details>
-
-<details>
-<summary><b>개선된 코드</b></summary>
-<div markdown="1">
-
-~~~java
-
-  <select id="GetAllReservationOnlyDates" resultType="reservation.model.ReservationBean">
-		select TO_CHAR(start_date, 'YYYY-MM-DD') as start_date, TO_CHAR(end_date, 'YYYY-MM-DD') as end_date
-		from reservation 
-		where product_no = #{pno}
-  </select>
-
-  <insert id="InsertReservation">
-	insert into reservation values(reservation_seq.nextval,#{product_no},#{buyer_no},to_date(#{start_date},'YY-MM-DD'),to_date(#{end_date},'YY-MM-DD'),0,sysdate,'1',#{amount},null)
-  </insert>
-~~~
-
-</div>
-</details>
-
 </br>
 
 ## 7. 그 외 트러블 슈팅
