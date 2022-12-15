@@ -282,8 +282,9 @@ public class PageForWareHouseDTO<T> {
 
 ### 4.9.  Service 방식
 
-- 이전 프로젝트에서 한 Controller에서 여러 작업을 
-- 이번 프로젝트에서는 **세션이 풀리면 알림창을 뜨게 하여 에러 발생을 방지**하였습니다.
+- 이전 프로젝트에서 한 Controller에서 여러 작업을 하여 복잡하고 알아보기 힘든 코드로 작성이 되었었습니다.
+
+- 이번 프로젝트에서는 **Service 방식**을 활용하여 Controller에서 한가지의 작업을 하면 Service에서 한 번에 작업을 하여 **Clean 한 코드**를 작성하였습니다.
 <br>
 
 ### 4.10.  페이징 Offset ~ Fetch
