@@ -78,7 +78,49 @@
 
 - 이번 프로젝트에서는 구현을 시작하기 앞서 Spring의 버전을 높히고 **Websoket을 활용**하였습니다.
 
-- **Websoket을 활용**하여 새로고침없는 (끊김없는) 실시간 채팅을 구현하였습니다.
+- **Websoket을 활용**하여 새로고침없는 (끊김없는) **실시간 채팅**을 구현하였습니다.
+<br>
+
+### 4.3. Oracle 함수
+  ~~~java
+create or replace FUNCTION GENERATE_LOT
+(V_ITEM_NO ITEM.NO%TYPE)
+RETURN VARCHAR
+IS
+    V_LOT_CODE LOT.CODE%TYPE; -- 가장 최근 로트코드
+    VR_LOT_CODE LOT.CODE%TYPE; -- 만들어진 로트코드
+    V2_ITEM_NO ITEM.NO%TYPE; -- 가장 최근 로트코드의 품목번호
+    V_INPUT_DATE VARCHAR2(8);
+    V_SEQ VARCHAR2(3);
+
+BEGIN
+    WITH A AS (
+        SELECT NO, CODE, ITEM_NO, REG_DATE, ROW_NUMBER() OVER (ORDER BY NO DESC) AS LEV
+        FROM LOT
+    )
+    SELECT CODE
+    INTO V_LOT_CODE
+    FROM A
+    WHERE LEV = 1;
+
+    V_INPUT_DATE := SUBSTR(V_LOT_CODE, 0, 8);
+    V_SEQ := SUBSTR(V_LOT_CODE, -3);
+
+    IF TO_CHAR(SYSDATE, 'YYYYMMDD') != V_INPUT_DATE THEN
+        V_INPUT_DATE := TO_CHAR(SYSDATE, 'YYYYMMDD');
+        V_SEQ := LPAD('1', 3, '0');
+    ELSE
+        V_SEQ := LPAD(TO_NUMBER(V_SEQ) + 1, 3, '0');
+    END IF;
+
+    VR_LOT_CODE := V_INPUT_DATE || V_ITEM_NO || V_SEQ;
+
+    RETURN VR_LOT_CODE;
+END;	
+~~~
+
+- 이번 프로젝트에서는 상품마다 부여되는 **로트번호를 생성하기 위해 함수를 사용**하여 같은 코드를 여러번 반복하지 않고 간결하게 보다 **Clean한 코드**를 작성하였습니다.
+
 <br>
   
 
