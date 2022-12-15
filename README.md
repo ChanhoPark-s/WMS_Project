@@ -120,7 +120,7 @@
 </br>
 
 ## 5. 시연 영상
- <p align="center"><img src="https://user-images.githubusercontent.com/106065178/207879068-86cee319-dd15-4d5b-afe7-e88f7d0210be.gif" width="600" height="400">
+ <p align="center"><img src="https://user-images.githubusercontent.com/106065178/207879068-86cee319-dd15-4d5b-afe7-e88f7d0210be.gif" width="600" height="350">
 <br><a href="https://www.youtube.com/watch?v=gVzC5DC1zgE&t=420s">[&nbsp;Youtube&nbsp;]</a><br><br>
 </p>
 
