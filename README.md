@@ -314,7 +314,7 @@ public class PageForWareHouseDTO<T> {
 - AWS의 EC2의 Unbuntu Lang은 UTF-8 형식을 사용하여 프로젝트에서 사용하는 ko_KR 형식과 달라 날짜 형식을 읽지 못하여 발생하는 문제였습니다.
 
 - 이전 프로젝트에서는 프로젝트의 모든 sql문들을 UTF-8 형식으로 바꿔주는 번거러운 작업을 하였습니다.
-- 이번 프로젝트에서는 번거러운 작업을 방지하기위해 AWS EC2의 Lang을 oracle sql에 맞는 ko_KR 로 바꿔주었습니다.<br>
+- 이번 프로젝트에서는 번거러운 작업을 방지하기위해 **AWS EC2의 Lang을 oracle sql에 맞는 ko_KR 로 바꿔**주었습니다.<br>
   <a href="https://chanho-park.tistory.com/entry/SQL-%EB%B0%B0%ED%8F%AC-%EC%8B%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EC%97%90%EB%9F%ACliteral-does-not-match-format-string">참고 사이트</a>
 
 </br>
