@@ -9,24 +9,29 @@
 
 ## 1. 제작 기간 & 참여 인원
 - 22.10.24 ~ 22.11.24 (4주)
-- 팀프로젝트
+- 팀프로젝트(8명)
 
 </br>
 
 ## 2. 사용 기술
   - Java 11
-  - Spring, Spring Security
+  - Spring
   - Gradle
-  - AWS EC2, AWS RDS , Putty, FileZilla
+  - AWS EC2, AWS RDS , Jenkins, Github-Webhook, Oracle Cloud, Ngrok 
   - Oracle
   - Jsp
   - Tomcat
-  - Html, Css, Javascript, Jquery
+  - Html, Css, Javascript, Jquery, Bootstrap
+  - RestAPI
+  - Generic
+  - WebSoket
+  - Cookies
+  - Service
 
 </br>
 
 ## 3. ERD 설계
-![DB 테이블 구조](https://user-images.githubusercontent.com/106065178/207790738-20131029-2d6e-4dd8-95c7-ce60ef7710d9.png)
+![WMS_ERD 최종](https://user-images.githubusercontent.com/106065178/207876831-b27d7cf2-2e53-472e-ab63-4d76b2c9a922.png)
 
 ## 3.1 시퀀스 다이어그램
 <p align="center">
