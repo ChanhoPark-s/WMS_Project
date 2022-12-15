@@ -281,6 +281,24 @@ public class PageForWareHouseDTO<T> {
 
 </br>
 
+### 4.8.  세션 확인
+
+- 이전 프로젝트에서 로그인 후 화면 이동 시 일정시간이 지나면 **세션이 풀려 에러가 발생**하는 문제 발생
+- 이번 프로젝트에서는 **세션이 풀리면 알림창을 뜨게 하여 에러 발생을 방지**하였습니다.
+<br>
+
+### 4.9.  Service 방식
+
+- 이전 프로젝트에서 한 Controller에서 여러 작업을 
+- 이번 프로젝트에서는 **세션이 풀리면 알림창을 뜨게 하여 에러 발생을 방지**하였습니다.
+<br>
+
+### 4.10.  페이징 Offset ~ Fetch
+
+-  다른 페이징 방식보다 빠르고 **간편한 페이징, 속도가 가장 빨라서 효율적인 방식**으로 코드를 작성하였습니다.
+<br>
+
+
 ## 5. 시연 영상
  <p align="center"><img src="https://user-images.githubusercontent.com/106065178/207879068-86cee319-dd15-4d5b-afe7-e88f7d0210be.gif" width="600" height="350">
 <br><a href="https://www.youtube.com/watch?v=gVzC5DC1zgE&t=420s">[&nbsp;Youtube&nbsp;]</a><br><br>
