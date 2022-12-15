@@ -151,11 +151,19 @@ END;
 ### 4.5.  Generic
 
 ~~~java
+@Data
+@AllArgsConstructor
+public class PageForWareHouseDTO<T> {
 	
+	private int totalCount;
+	private List<T> list;
+	private CriteriaForWareHouse cri;
+	
+}
 	
 ~~~
 
-- **Rest API를 사용**하여 메시지를 읽는 것 만으로도 메시지가 **의도하는 바를 명확하게 파악**할 수 있도록 진행하였습니다.
+- **Generic 방식**을 사용하여 비슷한 코드의 재사용성을 높혔으며, 후에 관리하기가 쉽도록 구현하였습니다.
 <br>
 
 ### 4.6.  Redirect 객체 넘기기[RedirectAttributes]
@@ -177,7 +185,6 @@ END;
 </div>
 </details>
 
-- 이전 프로젝트에서는 변수를 하나하나 받아와서 redirect 주소 뒤에 변수를 붙혀 넘기는 방식을 사용했었습니다.
 	
 <details>
 <summary><b>개선된 코드</b></summary>
@@ -198,9 +205,73 @@ END;
 </div>
 </details>
 
-</br>		
-
+</br>	
+	
+- 이전 프로젝트에서는 변수를 하나하나 받아와서 redirect 주소 뒤에 변수를 붙혀 넘기는 방식을 사용했었습니다.
+	
 - 이번 프로젝트에서는 개선하여 **RedirectAttributes클래스**를 사용하여 사용할 변수들을 모든 **객체를 바로 넘길 수 있도록** 하여 **Clean한 코드**를 작성하였습니다. 
+<br>
+	
+
+### 4.7.  JSON Parsing
+
+	
+<details>
+<summary><b>기존 코드</b></summary>
+<div markdown="1">
+	
+~~~java
+	 $.ajax({
+	 	type : 'post',
+		url : "allchatting.mb",
+		contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+		success : function(data) {
+			var roomlist = data.split("|");
+			
+			for(var i=0 in roomlist){
+				var roomlists = roomlist[i].split(",");
+				$('#lists').append(
+			              '<div class="card-body navbar-light px-0" data-simplebar>'+
+			                '<div class="navbar-nav">'+
+			                  '<a onClick="detailmsg('+roomlists[1]+')" class="nav-link d-flex align-items-center px-3 gap-3">'+
+			                  '</a>'+
+			                '</div>'+
+			              '</div>'+
+			            '</div>'); 
+			}
+			}//else
+		}//success 
+	})//ajax
+~~~
+	
+</div>
+</details>
+
+	
+<details>
+<summary><b>개선된 코드</b></summary>
+<div markdown="1">
+
+~~~java
+	$.getJSON("/chat/getAll", 
+	 		function(c){
+				for(i=0;i<c.length;i++){
+					$("#messageArea").append(
+					  "<div class='chat ch1'>"+
+				          "<div class='lnamed'>"+c[i].member_name+" "+c[i].rank_name+"</div><div class='textbox'>"+c[i].content+"</div></div>");
+				}
+		)
+	
+~~~
+
+</div>
+</details>
+
+</br>	
+	
+- 이전 프로젝트에서는 Controller에서 객체를 문자열로 바꿔준 후 view에서 Split으로 List로 만들어 준 후 사용을 하여 번거럽고 효율적이지 못한 코드 작성이였습니다.
+	
+- 이번 프로젝트에서는 개선하여 **Controller에서 바로 Json형태**로 받은 후 바로 그 **Json에 담긴 변수를 사용**할 수 있도록 개선하여 **코드의 효율성**을 높혔습니다.
 <br>
   
 
