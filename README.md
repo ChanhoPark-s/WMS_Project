@@ -47,7 +47,7 @@
   <br>
 
 
-## 4. 핵심 기능
+## 4. 핵심 기능 
 이 서비스의 핵심 기능은 **창고재고관리 및 채팅**입니다.  
 사용자는 이 서비스를 이용하기 위해 기초 정보를 등록하고 그 등록한 정보를 토대로 **재고를 발주,수주,이동을 통하여 재고관리**를 할 수 있습니다.
 
@@ -121,6 +121,58 @@ END;
 
 - 이번 프로젝트에서는 상품마다 부여되는 **로트번호를 생성하기 위해 함수를 사용**하여 같은 코드를 여러번 반복하지 않고 간결하게 보다 **Clean한 코드**를 작성하였습니다.
 
+<br>
+	
+### 4.4. Rest API
+
+~~~java
+	@GetMapping(
+			value={"/pages/{pageNum}/{amount}", "/pages/{pageNum}/{amount}/{whatColumn}", "/pages/{pageNum}/{amount}/{whatColumn}/{keyword}"}, 
+			produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<PageDTO<ItemVO>> clientlist(
+			@PathVariable("pageNum") int pageNum,
+			@PathVariable("amount") int amount,
+			@PathVariable(value="whatColumn", required = false) String whatColumn,
+			@PathVariable(value="keyword", required = false) String keyword) {				
+		
+
+		//System.out.println(pageNum + " " + amount + " " + whatColumn + " " + keyword);
+		
+		Criteria cri = new Criteria(pageNum, amount, whatColumn, keyword);
+		
+		return new ResponseEntity<>(service.getListPage(cri), HttpStatus.OK);		
+	}
+	
+~~~
+
+- **Rest API를 사용**하여 메시지를 읽는 것 만으로도 메시지가 **의도하는 바를 명확하게 파악**할 수 있도록 진행하였습니다.
+<br>
+
+### 4.5.  Generic
+
+~~~java
+	
+	
+~~~
+
+- **Rest API를 사용**하여 메시지를 읽는 것 만으로도 메시지가 **의도하는 바를 명확하게 파악**할 수 있도록 진행하였습니다.
+<br>
+
+### 4.6.  Redirect 객체 넘기기[RedirectAttributes]
+
+~~~java
+	@PostMapping("/update")
+	public String update(ClientVO VO,SearchVO searchvo,RedirectAttributes rttr) {
+		
+		service.update(VO);
+		rttr.addFlashAttribute("searchvo",searchvo);
+		
+		return redirect;
+	}
+	
+~~~
+- 이전 프로젝트에서는 변수를 하나하나 받아와서 redirect 주소 뒤에 변수를 붙혀 넘기는 방식을 사용했었습니다.
+- 이번 프로젝트에서는 개선하여 **RedirectAttributes클래스**를 사용하여 사용할 변수들을 모든 **객체를 바로 넘길 수 있도록** 하여 **Clean한 코드**를 작성하였습니다. 
 <br>
   
 
