@@ -326,10 +326,12 @@ public class PageForWareHouseDTO<T> {
 
 ## 7. 그 외 트러블 슈팅
 <details><summary> 배포 관련 에러 </summary><blockquote>
-<details><summary> boot </summary><blockquote>
-<p dir="auto">x
-y
-z</p>
+<details><summary> Jenkins UTF-8 에러 </summary><blockquote>
+	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다. ><a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>
+	
+<details><summary> Jenkins UTF-8 에러 </summary><blockquote>
+	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다. ><a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
 </blockquote></details>
 </blockquote></details>
 </br>
