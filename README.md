@@ -358,6 +358,43 @@ public class PageForWareHouseDTO<T> {
 <a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-%EC%9E%90%EB%8F%99-%EB%B9%8C%EB%93%9C%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-Github-Webhook-404-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
 </blockquote></details>	
 	
+<details><summary>Oracle Cloud 연동 실패</summary><blockquote>
+<p dir="auto"> Oracle Cloud DB는 <b>등록된 IP</b>가 아니면 접속이 안되게 막아두었습니다. 이를 통해 IP를 등록한 후 DB 접속이 가능하도록 하였습니다.
+<a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-Build-%EC%A4%91-Deployed-application-Error">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>	
+	
+<details><summary>Build 중 Root 에러</summary><blockquote>
+<p dir="auto"> Jenkins Build 중 Tomcat의 <b>Root를 지우지 못한다</b>는 에러가 발생하여 Root 폴더를 임의의 이름으로 수정을 해결하였습니다. 
+<a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4Build-%EC%A4%91-Unable-to-delete-Root-Error">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>
+	
+<details><summary>Pom 경로 문제</summary><blockquote>
+<p dir="auto"> Jenkins Build 중 <b>Pom의 경로</b>를 찾지 못하여 몇 번의 수정을 통해 경로를 찾아 수정하고 해결하였습니다.
+<a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-Maven-Build-POM-in-this-directory-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>	
+
+<details><summary>jar Build 후 UTF-8</summary><blockquote>
+	<p dir="auto"> Jenkins Build 중 <b>Encoding</b>이 설정이 되어 있지 않다는 에러를 마주한 후 Pom.xml에 Encoding 설정 후 해결하였습니다.
+<a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-WARNING-File-encoding-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>	
+	
+</blockquote></details>
+
+<details><summary> 그 외 에러 </summary><blockquote>
+<details><summary> Mybatis 변수 에러 </summary><blockquote>
+	<p dir="auto">sql문 작성 시 변수 하나는 인식을 하지 못하므로 변수 하나일 시 Value로 작성해주어 해결하였습니다.
+		<a href="https://chanho-park.tistory.com/entry/Spring-Mybatis-xml-%EC%9E%91%EC%84%B1%EC%8B%9C">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>
+	
+<details><summary> No mapping Found 에러 </summary><blockquote>
+	<p dir="auto">Controller 와 xml 문제가 없었는데도 해당 에러가 발생하여서 Java Build Path ojdbc 경로를 수정한 후 해결하였습니다.
+		<a href="https://chanho-park.tistory.com/entry/Spring-Spring-No-mapping-found-%EC%A4%91%EC%9A%94">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>
+	
+<details><summary> Tomcat already in use 에러</summary><blockquote>
+	<p dir="auto">다른 곳에서 8080 포트를 이미 사용하고 있어서 발생하는 문제였습니다. 포트를 임의로 8081로 수정한 후 해결하였습니다.
+		<a href="https://chanho-park.tistory.com/entry/Spring-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-run-%EC%8B%9C-Tomcat-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>	
 	
 </blockquote></details>
 </br>
@@ -365,6 +402,8 @@ public class PageForWareHouseDTO<T> {
 ## 8. 회고 / 느낀점
 >프로젝트 개발 회고 :
 
-- 이 프로젝트를 진행하면서 배포를 하게 됐었는데 배포를 마지막 구현을 다 한 뒤에 하루를 남긴 상태에서 진행하게 되느라 급하게 진행되어 여러 방법을 사용하지 못했던 게 아쉽습니다.
-- Spring 버전이 낮아 WebSoket을 활용한 채팅을 활용하지 못한 점이 아쉬워 다음 프로젝트에서는 WebSoket 을 활용하여 채팅을 진행하게 되었습니다.
-- 구현 전에 모든 방법과 상황을 파악하고 할 수 있는 기능, 기술 등을 계획을 정확하게 짠 후 진행하는 것이 프로젝트 진행하기에 문제가 없을 것 같다고 깨달았습니다.
+- 이전 프로젝트보다 훨씬 **효율적**이고 **Clean 한 코드**를 작성할 수 있어 **발전**할 수 있었습니다. 다음도 그 다음도 전보다 훨씬 나은 코드 작성을 할 것입니다.
+- 팀원 모두가 팀프로젝트를 통하여 하나라도 더 얻어갈 수 있도록 **서로 돕고 지원**하였습니다.
+- 다양한 방법을 하고 싶었고 처음 접하는 것들이 많아 에러가 무수히 발생하였지만 더 많은 것들을 배울 수 있었기에 재미있었습니다.
+- **사용자 입장에서 사용**해보고 불편한 점이 있는 지 확인해가면서 프로젝트를 진행하였습니다.
+- 이번에 사용한 기술을 다음 프로젝트에서는 더욱 **효율적으로 코드**를 작성할 수 있는 방법이 있는 지 알아보고 배워가며 적용해보고 싶습니다.
