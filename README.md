@@ -330,7 +330,7 @@ public class PageForWareHouseDTO<T> {
 <div markdown="1">
 	<details>
 	<summary>배포 관련 에러</summary>
-	<div markdown="1">
+	<div markdown="2">
 
 - Spring 설정에 UTF-8 설정이 안되어 있어서 한글이 깨지는 현상
 - <a href="https://chanho-park.tistory.com/entry/Spring-github-pushpull-%EC%8B%9C-%ED%95%9C%EA%B8%80%EA%B9%A8%EC%A7%90-%ED%98%84%EC%83%81">[&nbsp;해결 방법&nbsp;]</a>
