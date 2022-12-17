@@ -335,14 +335,30 @@ public class PageForWareHouseDTO<T> {
 ## 7. 그 외 트러블 슈팅
 <details><summary> 배포 관련 에러 </summary><blockquote>
 <details><summary> Jenkins UTF-8 에러 </summary><blockquote>
-	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다.<a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+	<p dir="auto"> Jenkins 빌드 중 **maven encoding** 에 문제가 발생하였습니다.<a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
 </blockquote></details>
+	
+	
 <details><summary> 비용 절약 </summary><blockquote>
-	<p dir="auto"> AWS RDS는 비용이 부담되는 문제가 있어서 Oracle Cloud와 Local을 활용할 수 있는 Ngrok을 활용하여 비용 절약을 하였습니다. >
+	<p dir="auto"> **AWS RDS는 비용이 부담**되는 문제가 있어서 **Oracle Cloud**와 Local을 활용할 수 있는 **Ngrok**을 활용하여 비용 절약을 하였습니다. >
 		<a href="https://chanho-park.tistory.com/entry/ngrok-local%EC%97%90-DB-%EC%84%A4%EC%A0%95-%ED%9B%84-%ED%8C%80%EC%9B%90%EA%B3%BC-%EA%B3%B5%EC%9C%A0-Oracle-DB">[&nbsp;Ngrok 정리&nbsp;]</a>
-	<a href="https://chanho-park.tistory.com/category/%EB%B0%B0%ED%8F%AC/Oracle%20Cloud">[&nbsp;Ngrok Oracle Cloud 정리&nbsp;]</a>
+	<a href="https://chanho-park.tistory.com/category/%EB%B0%B0%ED%8F%AC/Oracle%20Cloud">[&nbsp;Oracle Cloud 정리&nbsp;]</a>
 	</p>
 </blockquote></details>
+	
+	
+<details><summary> Oracle Cloud 연동 시 ojdbc 에러 </summary><blockquote>
+	<p dir="auto"> 이전에 사용하던 **ojdbc 버전**과 현재 ojdbc 버전이 달라서 발생하는 문제여서 **pom.xml 수정**을 통해 해결을 해결하였습니다.
+		<a href="https://chanho-park.tistory.com/entry/Oracle-Cloud-Oracle-cloud-%EC%99%80-spring-%EC%97%B0%EB%8F%99-%EC%8B%9C-connection-reset-Error">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>
+	
+	
+<details><summary>Github Webhook 404 에러</summary><blockquote>
+<p dir="auto"> github에 push시 자동 빌드화가 되도록 설정을 하였는데 빌드도 되지 않을 뿐더러 Webhook에서 404 에러가 발생하여 URL 수정 후 해결하였습니다.
+<a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-%EC%9E%90%EB%8F%99-%EB%B9%8C%EB%93%9C%ED%99%94%EB%A5%BC-%EC%9C%84%ED%95%9C-Github-Webhook-404-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+</blockquote></details>	
+	
+	
 </blockquote></details>
 </br>
 
