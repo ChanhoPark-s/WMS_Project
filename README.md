@@ -66,7 +66,7 @@
 
 - 이것을 해결하기 위해 **AWS EC2에 Jenkins**를 설치하여 사용자는 서버1을 사용하고 있다가 관리자가 Github에 Push할 때마다 **Github_Webhook**로 신호를 보내주고 그 신호를 받은 Jenkins가 서버2에 자동적으로 배포를 하고 배포가 완료됨과 동시 사용자는 서버2를 사용하게 되는 것입니다.
 - 이로 인해 **관리자는 지속적인 배포의 번거로움을 없애고 사용자는 끊김없는 서버를 사용**할 수 있게 됩니다.<br>
-<a href="https://chanho-park.tistory.com/category/%EB%B0%B0%ED%8F%AC/Jenkins">블로그 정리</a>
+<a href="https://chanho-park.tistory.com/category/%EB%B0%B0%ED%8F%AC/Jenkins">[&nbsp;블로그 정리&nbsp;]</a>
 <br>
 	
 ### 4.2. Websoket 실시간 채팅
@@ -289,6 +289,10 @@ public class PageForWareHouseDTO<T> {
 <br>
 
 ### 4.10.  페이징 Offset ~ Fetch
+~~~java
+	SELECT * FROM client where email like '%' ||  #{keyword} || '%'
+		ORDER BY no desc OFFSET #{beginRow} ROWS FETCH NEXT #{pageSize} ROWS ONLY
+~~~
 
 -  다른 페이징 방식보다 빠르고 **간편한 페이징, 속도가 가장 빨라서 효율적인 방식**으로 코드를 작성하였습니다.
 <br>
@@ -314,9 +318,9 @@ public class PageForWareHouseDTO<T> {
 
 - AWS의 EC2의 Unbuntu Lang은 UTF-8 형식을 사용하여 프로젝트에서 사용하는 ko_KR 형식과 달라 날짜 형식을 읽지 못하여 발생하는 문제였습니다.
 
-- 이전 프로젝트에서는 프로젝트의 모든 sql문들을 UTF-8 형식으로 바꿔주는 번거러운 작업을 하였습니다.
+- 이전 프로젝트에서는 프로젝트의 모든 Date 타입을 쓴 sql문들을 UTF-8 형식으로 바꿔주는 번거러운 작업을 하였습니다.
 - 이번 프로젝트에서는 번거러운 작업을 방지하기위해 **AWS EC2의 Lang을 oracle sql에 맞는 ko_KR 로 바꿔**주었습니다.<br>
-  <a href="https://chanho-park.tistory.com/entry/SQL-%EB%B0%B0%ED%8F%AC-%EC%8B%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EC%97%90%EB%9F%ACliteral-does-not-match-format-string">참고 사이트</a>
+  <a href="https://chanho-park.tistory.com/entry/SQL-%EB%B0%B0%ED%8F%AC-%EC%8B%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EC%97%90%EB%9F%ACliteral-does-not-match-format-string">[&nbsp;블로그 정리&nbsp;]</a>
 
 </br>
 
