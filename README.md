@@ -28,7 +28,7 @@
   - Oracle
   - Jsp
   - Tomcat
-  - Html, Css, Javascript, Jquery, Bootstrap
+  - Html, Css, Javascript, Jquery, bootstrap
   - RestAPI
   - Generic
   - WebSoket
@@ -326,47 +326,10 @@ public class PageForWareHouseDTO<T> {
 
 ## 7. 그 외 트러블 슈팅
 <details><summary> 배포 관련 에러 </summary><blockquote>
-<details><summary> bin </summary><blockquote>
-<details><summary> nest1 </summary><blockquote>
-<pre><code>a
-b
-c
-</code></pre>
-</blockquote></details>
-<details><summary> nest2 </summary><blockquote>
-<p dir="auto">a
-b
-c</p>
-</blockquote></details>
-<pre><code>file1
-file2
-file3
-</code></pre>
-</blockquote></details>
 <details><summary> boot </summary><blockquote>
 <p dir="auto">x
 y
 z</p>
-</blockquote></details>
-<details><summary> dev </summary><blockquote>
-<p dir="auto">p
-q
-r</p>
-</blockquote></details>
-<details><summary> etc </summary><blockquote>
-<p dir="auto">e
-t
-c</p>
-</blockquote></details>
-<details><summary> home </summary><blockquote>
-<p dir="auto">me
-you
-everyone</p>
-</blockquote></details>
-<details><summary> lib </summary><blockquote>
-<p dir="auto">lib
-er
-ate</p>
 </blockquote></details>
 </blockquote></details>
 </br>
