@@ -325,11 +325,16 @@ public class PageForWareHouseDTO<T> {
 </br>
 
 ## 7. 그 외 트러블 슈팅
-<details open=""><summary> 배포관련 에러 </summary><blockquote>
-<details><summary> Jenkins UTF-8 에러 </summary><blockquote>
+<details open=""><summary> root </summary><blockquote>
+<details open=""><summary> bin </summary><blockquote>
 <details><summary> nest1 </summary><blockquote>
-
+<pre><code>a
+b
+c
+</code></pre>
 </blockquote></details>
+</blockquote></details>
+
 
 
 <details>
