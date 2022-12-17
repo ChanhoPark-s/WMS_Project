@@ -325,80 +325,50 @@ public class PageForWareHouseDTO<T> {
 </br>
 
 ## 7. 그 외 트러블 슈팅
-<details open=""><summary> root </summary><blockquote>
-<details open=""><summary> bin </summary><blockquote>
+<details><summary> 배포 관련 에러 </summary><blockquote>
+<details><summary> bin </summary><blockquote>
 <details><summary> nest1 </summary><blockquote>
 <pre><code>a
 b
 c
 </code></pre>
 </blockquote></details>
+<details><summary> nest2 </summary><blockquote>
+<p dir="auto">a
+b
+c</p>
 </blockquote></details>
-
-
-
-<details>
-<summary>Github 사용 시 문제</summary>
-<div markdown="1">
-  
-  - <a href="https://github.com/vuejs/vue-devtools/issues/190](https://github.com/vuejs/vue-devtools/issues/190">[&nbsp;해결 방법&nbsp;]</a>
-  
-</div>
-</details>
-
-<details>
-<summary>AWS 재배포 시 이미지 삭제 문제</summary>
-<div markdown="1">
-  
-  - 이미 업로드한 이미지들이 배포를 다시 하게 되면은 사라지는 현상이 발생
-  - <a href="https://diagnostic-raven-02c.notion.site/remove-a0d4d336e6344f16b06d22425135e023">[&nbsp;해결 방법&nbsp;]</a>
-  
-</div>
-</details>
-
-<details>
-<summary> MyBatis sql 부등호 인식 문제 </summary>
-<div markdown="1">
-  
-  - XML 파일에 sql 문을 작성하게 되는데 < 부등호를 TAG로 인식하기 때문에 <br>
-  **"The content of elements must consist of well-formed character data or markup."** 라는 에러가 발생
- -  <a href="https://dlgkstjq623.tistory.com/389">[&nbsp;해결 방법&nbsp;]</a>
-  
-</div>
-</details>
-    
-<details>
-<summary> Controller에서 RequestParam 사용시 주의할 점 </summary>
-<div markdown="1">
-  
- - Controller에서 RequestParam을 사용하여 변수를 받을 때 받아오는 변수가 존재하지 않으면 에러 발생
- 
- - 받아오는 변수가 없을 때도 Controller가 작동되게 해야하기 때문에 아래와 같은 코드를 입력해주면 됩니다.
-~~~java
-	required = false  
-~~~
-	
-   
-</div>
-</details>    
-
-<details>
-<summary> Redirect 에 변수를 보낼 시 한글 깨짐 현상 </summary>
-<div markdown="1">
-  
- - Controller에서 다음 Controller로 변수를 담아 Redirect 를 하게 되면 한글이 깨지는 현상 발생
- 
- - UTF-8 형식으로 Encoder 한 다음에 보내주면 됩니다.
-~~~java
-	keyword = URLEncoder.encode(keyword, "UTF-8"); 
-~~~
-	
-   
-</div>
-</details>  
-
-
-    
+<pre><code>file1
+file2
+file3
+</code></pre>
+</blockquote></details>
+<details><summary> boot </summary><blockquote>
+<p dir="auto">x
+y
+z</p>
+</blockquote></details>
+<details><summary> dev </summary><blockquote>
+<p dir="auto">p
+q
+r</p>
+</blockquote></details>
+<details><summary> etc </summary><blockquote>
+<p dir="auto">e
+t
+c</p>
+</blockquote></details>
+<details><summary> home </summary><blockquote>
+<p dir="auto">me
+you
+everyone</p>
+</blockquote></details>
+<details><summary> lib </summary><blockquote>
+<p dir="auto">lib
+er
+ate</p>
+</blockquote></details>
+</blockquote></details>
 </br>
 
 ## 8. 회고 / 느낀점
