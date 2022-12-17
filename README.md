@@ -322,14 +322,21 @@ public class PageForWareHouseDTO<T> {
 - 이번 프로젝트에서는 번거러운 작업을 방지하기위해 **AWS EC2의 Lang을 oracle sql에 맞는 ko_KR 로 바꿔**주었습니다.<br>
   <a href="https://chanho-park.tistory.com/entry/SQL-%EB%B0%B0%ED%8F%AC-%EC%8B%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EC%97%90%EB%9F%ACliteral-does-not-match-format-string">[&nbsp;블로그 정리&nbsp;]</a>
 
+### 6.2. AWS EC2 ram 용량 부족  [Jenkins 최소 사양 부족]
+- **Jenkins에서 배포 시** 특정 부분도 아닌 계속 여러 부분에서 멈추는 현상이 발생하였습니다.<br>
+
+- Jenkins를 구동하기 위한 최소한의 사양이 있는데 AWS EC2의 무료 버전인 micro를 사용하게 되면 Ram 용량이 부족하게 되는 현상을 발견하였습니다.
+
+- 이를 해결하기위해 EC2 내에 swap 공간을 활용하여 Ram 사양을 키운 듯한 효과를 내었습니다.<br>
+  <a href="https://chanho-park.tistory.com/entry/%EC%A0%A0%ED%82%A8%EC%8A%A4-Build-%EC%8B%9C-%EA%B3%84%EC%86%8D-%EB%8B%A4%EB%A5%B8-%EB%B6%80%EB%B6%84%EC%97%90%EC%84%9C-%EB%A9%88%EC%B6%B0%EC%84%9C-%EC%A7%84%ED%96%89-%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%ED%98%84%EC%83%81%EC%A4%91%EC%9A%94">[&nbsp;블로그 정리&nbsp;]</a>
+
 </br>
 
 ## 7. 그 외 트러블 슈팅
 <details><summary> 배포 관련 에러 </summary><blockquote>
 <details><summary> Jenkins UTF-8 에러 </summary><blockquote>
-	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다. ><a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
+	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다.<a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
 </blockquote></details>
-	
 <details><summary> Jenkins UTF-8 에러 </summary><blockquote>
 	<p dir="auto"> Jenkins 빌드 중 maven encoding 에 문제가 발생하였습니다. ><a href="https://chanho-park.tistory.com/entry/Jenkins-UTF-8-%EC%97%90%EB%9F%AC">[&nbsp;블로그 정리&nbsp;]</a></p>
 </blockquote></details>
