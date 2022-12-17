@@ -340,7 +340,7 @@ public class PageForWareHouseDTO<T> {
 	
 	
 <details><summary> 비용 절약 </summary><blockquote>
-	<p dir="auto"> <b>AWS RDS는 비용이 부담</b>되는 문제가 있어서 <b>Oracle Cloud</b>와 Local을 활용할 수 있는 <b>Ngrok</b>을 활용하여 비용 절약을 하였습니다. >
+	<p dir="auto"> <b>AWS RDS는 비용이 부담</b>되는 문제가 있어서 <b>Oracle Cloud</b>와 Local을 활용할 수 있는 <b>Ngrok</b>을 활용하여 비용 절약을 하였습니다.
 		<a href="https://chanho-park.tistory.com/entry/ngrok-local%EC%97%90-DB-%EC%84%A4%EC%A0%95-%ED%9B%84-%ED%8C%80%EC%9B%90%EA%B3%BC-%EA%B3%B5%EC%9C%A0-Oracle-DB">[&nbsp;Ngrok 정리&nbsp;]</a>
 	<a href="https://chanho-park.tistory.com/category/%EB%B0%B0%ED%8F%AC/Oracle%20Cloud">[&nbsp;Oracle Cloud 정리&nbsp;]</a>
 	</p>
