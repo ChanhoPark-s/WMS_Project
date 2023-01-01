@@ -4,7 +4,7 @@
 ><h4><b>프로젝트 자료</b></h4>
 ><a href="https://www.youtube.com/watch?v=gVzC5DC1zgE&t=420s" style="margin-top : 10px;"><img src="https://user-images.githubusercontent.com/106065178/207799552-27c7f9ec-3320-492a-b69d-23fe1783d32a.jpg" width="80" height="35"></a>
 ><a href="https://diagnostic-raven-02c.notion.site/1-e754e62847224d21805c4a1de271887b" class="sbox" ><img class="profile" style="width: 45px;  margin-bottom: 3px; margin-left: 25px;" src="https://user-images.githubusercontent.com/106065178/207617352-af4e6185-95a8-449e-80f2-b17e711e7347.png"></a>
- 
+  
 </br>
 
 ## 1. 제작 기간 & 참여 인원
